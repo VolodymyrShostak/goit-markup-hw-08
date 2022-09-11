@@ -1,4 +1,9 @@
-
+.direction {
+    display: contents;
+    @media screen and (max-width: 1200px){
+        display: none;
+}
+}
 .image-list__item {
     position: relative;
     &:not(:last-child) {

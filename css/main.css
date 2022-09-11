@@ -691,6 +691,15 @@ summary {
   }
 }
 
+.direction {
+  display: contents;
+}
+@media screen and (max-width: 1200px) {
+  .direction {
+    display: none;
+  }
+}
+
 .image-list__item {
   position: relative;
 }
