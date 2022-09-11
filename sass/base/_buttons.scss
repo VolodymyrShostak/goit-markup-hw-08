@@ -1,0 +1,84 @@
+.button {
+    padding: 10px 32px;
+    font-family: inherit;
+    color: var(--title-text-color);
+    background: #f5f4fa;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.62;
+    letter-spacing: 0.02em;
+    border-radius: 4px;
+    border: none;
+}
+.button--main {
+    background-color: var(--accent-color);
+    color: var(--primaty-white-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+}
+
+.button.secondary {
+    background-color: F5F4FA;
+    color: var(--title-text-color);
+    border: none;
+cursor: pointer;
+
+    transition-property: color, background-color, box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+
+.button.secondary:hover,
+.button.secondary:focus  {
+
+ background-color: var(--accent-color);
+    color: var(--primaty-white-color);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);}
+
+
+  .button:current .button.secondary {
+    background-color: var(--accent-color);
+    color: var(--primaty-white-color);
+}
+.button-close {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 8px;
+    top: 8px;
+    border-radius: 50%;
+    background-color: var(--primaty-white-color);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    &:hover .icon-close,
+    &:focus .icon-close {
+    fill: var(--accent-color);
+}
+}
+.button-field__button {
+    background: #188ce8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    color: var(--primaty-white-color);
+    padding: 10px 52px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+        background-color: var(--accent-color);
+        cursor: pointer;
+    }
+}

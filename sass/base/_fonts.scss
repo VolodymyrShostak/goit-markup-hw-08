@@ -1,0 +1,53 @@
+
+
+.page {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+    color: #757575;
+    letter-spacing: 0.03em;
+}
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.decoration {
+    text-decoration: none;
+}
+.container {
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 1200px;
+}
+.list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.contacts {
+    margin-left: auto;
+    display: flex;
+    justify-content: flex-end;
+}
+
+    .logo {
+    font-family: 'Raleway', sans-serif;
+    font-style: Bold;
+    font-size: 26px;
+    line-height: 1.2;
+    &--blue {
+color: var(--accent-color);
+    }
+    &--black {
+ color: #000000;
+    }
+    &--white {
+       color: var(--primaty-white-color); 
+    }
+}
+.image-list,
+.clients-list {
+    margin-top: 50px;
+    display: flex;
+}
