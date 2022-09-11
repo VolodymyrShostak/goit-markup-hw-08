@@ -15,24 +15,30 @@
 .work-example {
     display: flex;
     flex-wrap: wrap;
+    gap: 30px;
 }
 .work-example__card {
-    margin-bottom: 30px;
-    width: 370px;
+    
+   
     background-color: var(--primaty-white-color);
 
     transition-property: box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-&:nth-last-child(-n + 3) {
-    margin-bottom: 0;
-    margin-right: 30px;
-}
-&:nth-child(3n) {
-    margin-right: 0px;
-}
+
+
 &:hover .descr-text {
-    transform: translateY(0);
+    transform: translateY(0);}
+    @media screen and (min-width: 480px){
+        width: 450px;
+         }
+      
+    @media screen and (min-width: 768px){
+        width: 354px;
+         }
+    @media screen and (min-width: 1200px){
+        width: 270px;
+
 }}
 
 .work-example .work-example__card:hover,

@@ -746,6 +746,7 @@ summary {
 }
 
 .personal__card {
+  width: 100%;
   background-color: var(--primaty-white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -1038,25 +1039,32 @@ summary {
 .work-example {
   display: flex;
   flex-wrap: wrap;
+  gap: 30px;
 }
 
 .work-example__card {
-  margin-bottom: 30px;
-  width: 370px;
   background-color: var(--primaty-white-color);
   transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.work-example__card:nth-last-child(-n+3) {
-  margin-bottom: 0;
-  margin-right: 30px;
-}
-.work-example__card:nth-child(3n) {
-  margin-right: 0px;
-}
 .work-example__card:hover .descr-text {
   transform: translateY(0);
+}
+@media screen and (min-width: 480px) {
+  .work-example__card {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .work-example__card {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .work-example__card {
+    width: 270px;
+  }
 }
 
 .work-example .work-example__card:hover,
