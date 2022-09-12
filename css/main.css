@@ -879,7 +879,6 @@ summary {
 }
 
 .footer-content-info {
-  display: flex;
   width: 100%;
   display: block;
 }
@@ -892,6 +891,17 @@ summary {
 .logo-address {
   text-align: center;
   margin-bottom: 60px;
+}
+
+.address-slogan {
+  margin-left: 61px;
+  margin-right: 74px;
+  gap: 165px;
+}
+@media screen and (min-width: 768px) {
+  .address-slogan {
+    display: flex;
+  }
 }
 
 .post-address,
@@ -990,6 +1000,11 @@ summary {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media screen and (max-width: 1199px) {
+  .mail-label {
+    max-width: 450px;
+  }
 }
 
 .input-field {
