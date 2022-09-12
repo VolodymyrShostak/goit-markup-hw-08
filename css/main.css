@@ -152,7 +152,7 @@ summary {
 }
 @media screen and (max-width: 479px) {
   .section {
-    padding-top: 0;
+    padding-top: 60px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1036,9 +1036,20 @@ summary {
 }
 
 .button-filter {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
   margin-bottom: 50px;
   display: flex;
-  justify-content: center;
+}
+@media screen and (max-width: 768px) {
+  .button-filter {
+    max-width: 450px;
+    justify-content: flex-start;
+    gap: 8px;
+    margin-bottom: 40px;
+  }
 }
 
 .filter {
@@ -1057,6 +1068,7 @@ summary {
 }
 
 .work-example__card {
+  width: 100%;
   background-color: var(--primaty-white-color);
   transition-property: box-shadow;
   transition-duration: 250ms;
@@ -1067,17 +1079,17 @@ summary {
 }
 @media screen and (min-width: 480px) {
   .work-example__card {
-    width: 450px;
+    max-width: 450px;
   }
 }
 @media screen and (min-width: 768px) {
   .work-example__card {
-    width: 354px;
+    max-width: 354px;
   }
 }
 @media screen and (min-width: 1200px) {
   .work-example__card {
-    width: 270px;
+    max-width: 370px;
   }
 }
 
