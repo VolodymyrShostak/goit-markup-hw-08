@@ -29,11 +29,11 @@
 .work-example {
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 40px;
 }
 .work-example__card {
     width: 100%;
-   
+   display: inline-block;
     background-color: var(--primaty-white-color);
 
     transition-property: box-shadow;
