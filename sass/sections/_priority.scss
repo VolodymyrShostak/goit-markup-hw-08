@@ -21,8 +21,9 @@
 .priority__item {
     display: flex;
     flex-direction: column;
-@media screen and (min-width: 320px){
-        width: 450px;
+    
+@media screen and (max-width: 479px){
+        width: 100%;
          }
    
     
@@ -62,8 +63,8 @@
     line-height: 1.7;
     letter-spacing: 0.03em;
     
-    @media screen and (min-width: 320px){
-        width: 450px;
+    @media screen and (max-width: 479px){
+        width: 100%;
          }
    
     
