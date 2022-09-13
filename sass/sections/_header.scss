@@ -4,6 +4,14 @@
     border-bottom: 1px solid #ececec;
 }
 
+.navigation {
+    
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+
+}}
+
 .header-links {
     margin: auto;
     display: flex;
@@ -12,7 +20,7 @@
 }
 
 .site-nav {
-    margin-left: 93px;
+    
     display: flex;
     &__item-chapter {
         @extend %mr-50;

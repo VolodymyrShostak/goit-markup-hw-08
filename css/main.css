@@ -330,6 +330,12 @@ summary {
   border-bottom: 1px solid #ececec;
 }
 
+@media screen and (min-width: 768px) {
+  .navigation {
+    display: flex;
+  }
+}
+
 .header-links {
   margin: auto;
   display: flex;
@@ -338,7 +344,6 @@ summary {
 }
 
 .site-nav {
-  margin-left: 93px;
   display: flex;
 }
 .site-nav__item-chapter--current {
@@ -847,6 +852,11 @@ summary {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .client-list__client {
     width: 226px;
+  }
+}
+@media screen and (min-width: 1200px) and (min-width: 1200px) {
+  .client-list__client {
+    width: 170px;
   }
 }
 
