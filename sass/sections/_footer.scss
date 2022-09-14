@@ -95,6 +95,9 @@
     text-transform: uppercase;
 
     color: var(--primaty-white-color);
+     @media screen and (min-width: 1200px) {
+    text-align: start;
+  } 
 }
 .link-list {
     display: flex;
@@ -129,11 +132,7 @@
     margin-left: 95px;} 
     
 }
-.slogan .caption {
-  @media screen and (min-width: 1200px) {
-    text-align: start;
-  } 
-}
+
 
 .mail-form {
    

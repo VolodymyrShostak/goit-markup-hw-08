@@ -496,7 +496,7 @@ img {
 }
 
 .wrap {
-  padding: 0;
+  padding-left: 0;
 }
 
 .social {
@@ -1227,6 +1227,11 @@ img {
   text-transform: uppercase;
   color: var(--primaty-white-color);
 }
+@media screen and (min-width: 1200px) {
+  .caption {
+    text-align: start;
+  }
+}
 
 .link-list {
   display: flex;
@@ -1259,12 +1264,6 @@ img {
   .slogan {
     width: 582px;
     margin-left: 95px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .slogan .caption {
-    text-align: start;
   }
 }
 

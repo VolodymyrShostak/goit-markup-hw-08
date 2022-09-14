@@ -11,12 +11,17 @@
         <link rel="stylesheet" href="./css/styles.css" />
     </head>
     <body class="page">
-       <header class="page-header">
+      <header class="page-header">
            <div class="header__container container">
                <a href="/" class="decoration logo">
                    <span class="logo--blue">Web</span>
                    <span class="logo--black">Studio</span>
                 </a>
+                <button class="burger-open js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                    <svg class="burger__icon" width="40" height="40">
+                        <use href="./images/symbol-defs.svg#icon-burger"></use>
+                    </svg>
+                </button>
                 <!--десктоп/таблет меню-->
                 <div class="header-desktop">
                     <nav class="navigation">
@@ -64,7 +69,7 @@
                     
                     <button class="burger-close js-close-menu">
                         <svg class="burger__iconx" width="40" height="40">
-                            <use href="./images/symbol-defs.svg#icon-burger"></use>
+                            <use href="./images/symbol-defs.svg#icon-close"></use>
                         </svg>
                     </button>
 
@@ -108,11 +113,7 @@
                     </div>
                     </div>
                 </div>
-                <button class="burger-open js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-                    <svg class="burger__icon" width="40" height="40">
-                        <use href="./images/symbol-defs.svg#icon-burger"></use>
-                    </svg>
-                </button>
+                
             </div>
             
         </header>
