@@ -3,11 +3,11 @@
     flex-wrap: wrap;
     width: 100%;
     justify-content: center;
+    gap: 8px;
      @media screen and (max-width: 768px) {
         max-width: 450px;
  justify-content: flex-start;
-         gap: 8px;
-        
+              
          margin-bottom: 40px;
      
                                                                                                  
@@ -21,10 +21,9 @@
     font-size: 16px;
 }
 
-.button-item:not(:last-child) {
-    margin-right: 8px;
 
-}
+
+
 
 .work-example {
     display: flex;
