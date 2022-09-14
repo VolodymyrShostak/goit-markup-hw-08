@@ -394,6 +394,8 @@ img {
 
 .burger-open {
   position: absolute;
+  border: none;
+  background: none;
   right: 15px;
 }
 @media screen and (min-width: 768px) {
@@ -406,6 +408,8 @@ img {
   position: fixed;
   top: 15px;
   right: 15px;
+  border: none;
+  background: none;
 }
 
 .mobile-menu {
@@ -483,6 +487,10 @@ img {
 .contact__link {
   text-decoration: none;
   color: inherit;
+}
+
+.wrap {
+  padding: 0;
 }
 
 .social {
