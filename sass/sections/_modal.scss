@@ -34,7 +34,7 @@
     display: flex;
     transform: translate(-50%, -50%) scale(1);
     width: 90%;
-    height: 581px;
+  ;
     background: var(--primaty-white-color);
     opacity: 1;
 
@@ -75,6 +75,13 @@
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.01em;
+}
+.checkbox__icon {
+   position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0); 
 }
 .form__input {
     position: relative;
