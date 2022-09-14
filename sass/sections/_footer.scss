@@ -125,8 +125,14 @@
    
     width: 100%;
    @media screen and (min-width: 1200px){
-        width: 582px;} 
+        width: 582px;
+    margin-left: 95px;} 
     
+}
+.slogan .caption {
+  @media screen and (min-width: 1200px) {
+    text-align: start;
+  } 
 }
 
 .mail-form {
@@ -135,7 +141,9 @@
     align-items: center;
     flex-direction: column;
     @media screen and (min-width: 1200px){
-        display: flex;}
+       flex-direction: row;
+    }
+
    }
 
 .mail-label {
@@ -144,7 +152,9 @@
     @media screen and (max-width: 1199px){
         max-width: 450px;}
      @media screen and (min-width: 1200px){
-        max-width: 366px ;}   
+        max-width: 366px ;
+    margin: 0;
+    }   
     display: flex;
     justify-content: center;
     
@@ -172,11 +182,13 @@ border-radius: 4px;
 }
 
 .button-submit {
-   display: flex;
+   display: inline-block;
    justify-content: space-between;
     margin-left: auto;
     margin-right: auto;
-
+@media screen and (min-width: 1200px) {
+    margin-left: 12px;
+}
     
     color: var(--primaty-white-color);
     width: 200px;

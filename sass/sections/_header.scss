@@ -12,6 +12,7 @@
     height: 100%;
     display: flex;
     align-items: center;
+    justify-content: space-between;
  
     @media screen and (min-width: 768px) {
       
@@ -57,23 +58,28 @@
     right: 15px;
 }
 .burger-open {
-    position: absolute;
+   
    border: none;
    background: none;
     right: 15px ;
     @media screen and (min-width: 768px) {
         display: none;
     }
+
 }
 .burger-close {
-    position: fixed;
+    position: absolute;
     top: 15px;
     right: 15px;
     border: none;
    background: none;
+   @media screen and (min-width: 768px) {
+        display: none;
+    }
 }
 
 .mobile-menu {
+    position: relative;
     height: 100%;
     display: flex;
     justify-content: space-between;
