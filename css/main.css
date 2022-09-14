@@ -648,13 +648,24 @@ img {
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
-  width: 696px;
   color: var(--primaty-white-color);
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+}
+@media screen and (min-width: 768px) {
+  .hero__title {
+    width: 370px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    width: 698px;
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .backdrop {
