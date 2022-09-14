@@ -496,6 +496,10 @@ img {
 .contact__link {
   text-decoration: none;
   color: inherit;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
 }
 
 .wrap {
@@ -721,10 +725,22 @@ img {
   padding: 35px 40px;
   display: flex;
   transform: translate(-50%, -50%) scale(1);
-  width: 90%;
+  max-width: 450px;
   background: var(--primaty-white-color);
   opacity: 1;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .form {
@@ -820,7 +836,7 @@ img {
   letter-spacing: 0.01em;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.form__comment:hover, .form__comment:fokus {
+.form__comment:hover, .form__comment:focus {
   border-color: var(--accent-color);
 }
 
@@ -828,6 +844,13 @@ img {
   margin-top: 13px;
   display: flex;
   margin-left: 12px;
+}
+@media screen and (max-width: 558px) {
+  .checkbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .checkbox__label {
@@ -1219,14 +1242,14 @@ img {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.address .contact:hover, .address .contact:fokus {
+.address .contact:hover, .address .contact:focus {
   color: var(--accent-color);
 }
 
 .socials {
   margin-top: 12px;
   margin-left: auto;
-  margin-right: auto;
+  margin-right: 42px;
   margin-bottom: 60px;
   width: 206px;
   height: 80px;
@@ -1265,7 +1288,7 @@ img {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.link-svg-footer:hover, .link-svg-footer:fokus {
+.link-svg-footer:hover, .link-svg-footer:focus {
   background-color: var(--accent-color);
   color: var(--primaty-white-color);
 }
@@ -1325,6 +1348,9 @@ img {
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+}
+.input-field:hover, .input-field:focus {
+  color: var(--primaty-white-color);
 }
 
 .button-submit {
