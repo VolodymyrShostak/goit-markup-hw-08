@@ -629,9 +629,15 @@ img {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 @media screen and (max-width: 479.8px) {
   .hero {
@@ -646,6 +652,10 @@ img {
 @media screen and (min-width: 768px) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/header_desktop1.jpg);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
     height: 600px;
   }
 }
@@ -988,9 +998,9 @@ img {
 }
 
 .direction {
-  display: contents;
+  padding-bottom: 94px;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199px) {
   .direction {
     display: none;
   }
@@ -1027,6 +1037,10 @@ img {
 .shadow {
   background: var(--primary-bacground-color);
   padding-bottom: 94px;
+}
+
+.section.team {
+  background-color: #F5F4FA;
 }
 
 .personal {
@@ -1127,6 +1141,12 @@ img {
   gap: 30px;
   width: 100%;
   justify-content: center;
+  margin-top: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .clients-list {
+    margin-top: 50px;
+  }
 }
 
 .client-list__client {
@@ -1387,17 +1407,20 @@ img {
 .button-filter {
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
   justify-content: center;
   gap: 8px;
-  margin-bottom: 50px;
-  display: flex;
+  width: 100%;
+  margin-bottom: 30px;
 }
 @media screen and (max-width: 768px) {
   .button-filter {
-    max-width: 450px;
     justify-content: flex-start;
-    margin-bottom: 40px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .button-filter {
+    width: 100%;
+    margin-bottom: 50px;
   }
 }
 
