@@ -24,7 +24,7 @@
                         <use href="./images/symbol-defs.svg#icon-burger"></use>
                     </svg>
                 </button>
-               <!--мобільне меню-->
+                <!--мобільне меню-->
                 <div class="header-mobile js-menu-container" id="mobile-menu">
                     <div class="mobile-menu">
                         <nav class="mobile-menu__nav">
@@ -80,7 +80,6 @@
                                     >
                                 </li>
                                 <li class="social__item">
-                                    
                                     <a class="social__link" href="#"
                                         >LinkedIn</a
                                     >
@@ -88,15 +87,17 @@
                             </ul>
                         </div>
                     </div>
-                      <button
-                    class="burger-close js-open-menu"
-                    aria-expanded="false"
-                    aria-controls="mobile-menu"
-                >
-                    <svg class="burger-close" width="40" height="40">
-                        <use href="./images/symbol-defs.svg#icon-close"></use>
-                    </svg>
-                </button>
+                    <button
+                        class="burger-close js-open-menu"
+                        aria-expanded="false"
+                        aria-controls="mobile-menu"
+                    >
+                        <svg class="burger-close" width="40" height="40">
+                            <use
+                                href="./images/symbol-defs.svg#icon-close"
+                            ></use>
+                        </svg>
+                    </button>
                 </div>
                 <!--десктоп/таблет меню-->
                 <div class="header-desktop">
@@ -162,13 +163,10 @@
                         </li>
                     </ul>
                 </div>
- 
-              
             </div>
         </header>
         <main>
             <!--Шапка сайту-->
-
             <section class="hero">
                 <div class="container">
                     <h1 class="hero__title">
@@ -183,7 +181,6 @@
                     </button>
                 </div>
             </section>
-
             <!--Основні акценти-->
             <section class="section prime">
                 <div class="container">
@@ -273,7 +270,7 @@
                         <li class="image-list__item">
                             <img
                                 class="image-list__photo"
-                                src="./images/img-operation-1.jpg"
+                                src="./images/about/img-operation-1.jpg"
                                 alt="вид діяльності 1"
                                 width="370"
                             />
@@ -287,7 +284,7 @@
                         <li class="image-list__item">
                             <img
                                 class="image-list__photo"
-                                src="./images/img-operation-2.jpg"
+                                src="./images/about/img-operation-2.jpg"
                                 alt="вид діяльності 2"
                                 width="370"
                             />
@@ -299,7 +296,7 @@
                         <li class="image-list__item">
                             <img
                                 class="image-list__photo"
-                                src="./images/img-operation-3.jpg"
+                                src="./images/about/img-operation-3.jpg"
                                 alt="вид діяльності 3"
                                 width="370"
                             />
@@ -928,7 +925,7 @@
                 </div>
             </div>
         </footer>
-
+        <!--модальне вікно-->
         <div class="backdrop is-hidden" data-modal>
             <div class="modal">
                 <button class="button-close" data-modal-close>
@@ -1008,7 +1005,7 @@
                     </div>
 
                     <div class="checkbox">
-                        <label class="checkbox__label " for="user-accept">
+                        <label class="checkbox__label" for="user-accept">
                             <input
                                 class="checkbox__input"
                                 type="checkbox"
@@ -1016,7 +1013,7 @@
                                 id="user-accept"
                             />
 
-                            <svg class="checkbox__icon " width="16" height="15">
+                            <svg class="checkbox__icon" width="16" height="15">
                                 <use
                                     href="./images/symbol-defs.svg#icon-icon-check"
                                 ></use>
@@ -1035,6 +1032,7 @@
                 </form>
             </div>
         </div>
+        <!--скрипти-->
         <script src="./js/mobile-menu.js"></script>
         <script src="./js/modal.js"></script>
     </body>
